@@ -1,0 +1,34 @@
+
+header:
+  tracking:
+    name: "x-earlywarning-tracking"
+  requesters:
+    name: "x-earlywarning-requesters"
+
+#Spring Boot
+spring:
+  jackson:
+  date-format: "YYYY-MM-dd HH:mm:ss"
+  serialization:
+  write_dates_as_timestamps: "false"
+
+report:
+  unitUnderTest: "Default Service"
+  project: "Default Project"
+  testDocument: "Default Document"
+  testEnvironment: "Default env"
+  testExecutedBy: "Default By"
+
+vip: "https://dev2-services-.ews.int/"
+
+templateDir: "templates"
+
+service:
+  client:
+    url: "https://dev-services-nonfcra.ews.int/scoring-orch-ws/api/v1.0/"
+    keyStore: "dev-test-client-nonfcra.ews.int.keystore"
+    keyStorePassword: "37Id=YQ%05CF"
+    trustStore: "ews_ca.keystore"
+    trustStorePassword: "changeit"
+    maxConnections: 100
+    readTimeout: 1000
